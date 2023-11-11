@@ -7,22 +7,6 @@ import { CreateReservation } from '../reservation/reservation.dto';
 export class WorkshopService {
   constructor(private readonly prisma: PrismaService) {}
 
-  // create(createWorkshopDto: CreateWorkshopDto) {
-  //   return 'This action adds a new workshop';
-  // }
-  // findAll() {
-  //   return `This action returns all workshop`;
-  // }
-  // findOne(id: number) {
-  //   return `This action returns a #${id} workshop`;
-  // }
-  // update(id: number, updateWorkshopDto: UpdateWorkshopDto) {
-  //   return `This action updates a #${id} workshop`;
-  // }
-  // remove(id: number) {
-  //   return `This action removes a #${id} workshop`;
-  // }
-
   async findOne(id: number): Promise<WorkshopWithReservationCounts> {
     const workshop = await this.prisma.workshops.findUnique({
       where: {
