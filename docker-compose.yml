@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  mysql_db:
+    container_name: mysql_db
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'event_management'
+      MYSQL_ROOT_PASSWORD: "root"
+    ports:
+      - '3307:3306'
+    volumes: 
+      - temp-db:/var/lib/mysql
+      - ./my.cnf:/etc/mysql/my.cnf:ro
+volumes:
+  temp-db:
