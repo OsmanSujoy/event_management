@@ -12,7 +12,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/event/?current_page=10",
+					"raw": "http://localhost:3000/event/",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -35,7 +35,8 @@
 						},
 						{
 							"key": "current_page",
-							"value": "10"
+							"value": "10",
+							"disabled": true
 						}
 					]
 				}
@@ -57,23 +58,6 @@
 					"path": [
 						"event",
 						":id"
-					],
-					"query": [
-						{
-							"key": "filter",
-							"value": "Event 01",
-							"disabled": true
-						},
-						{
-							"key": "per_page",
-							"value": "2",
-							"disabled": true
-						},
-						{
-							"key": "current_page",
-							"value": "3",
-							"disabled": true
-						}
 					],
 					"variable": [
 						{
@@ -102,23 +86,6 @@
 						":id",
 						"workshop"
 					],
-					"query": [
-						{
-							"key": "filter",
-							"value": "Event 01",
-							"disabled": true
-						},
-						{
-							"key": "per_page",
-							"value": "2",
-							"disabled": true
-						},
-						{
-							"key": "current_page",
-							"value": "3",
-							"disabled": true
-						}
-					],
 					"variable": [
 						{
 							"key": "id",
@@ -145,23 +112,6 @@
 						"workshop",
 						":id"
 					],
-					"query": [
-						{
-							"key": "filter",
-							"value": "Event 01",
-							"disabled": true
-						},
-						{
-							"key": "per_page",
-							"value": "2",
-							"disabled": true
-						},
-						{
-							"key": "current_page",
-							"value": "3",
-							"disabled": true
-						}
-					],
 					"variable": [
 						{
 							"key": "id",
@@ -179,7 +129,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Hello\",\r\n    \"email\": \"test@test.com\"\r\n}",
+					"raw": "{\r\n    \"name\": \"Mr. Test\",\r\n    \"email\": \"test@test.com\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -197,23 +147,6 @@
 						"workshop",
 						":id",
 						"reservation"
-					],
-					"query": [
-						{
-							"key": "filter",
-							"value": "Event 01",
-							"disabled": true
-						},
-						{
-							"key": "per_page",
-							"value": "2",
-							"disabled": true
-						},
-						{
-							"key": "current_page",
-							"value": "3",
-							"disabled": true
-						}
 					],
 					"variable": [
 						{
